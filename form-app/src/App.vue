@@ -37,12 +37,6 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-
-    <!-- <v-app-bar app>
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-
-      <v-toolbar-title>Application</v-toolbar-title>
-    </v-app-bar> -->
     <v-app-bar
       app
       color="grey darken-3"
@@ -56,8 +50,6 @@
       </template>
 
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-
-      <!-- <v-app-bar-title>Title</v-app-bar-title> -->
 
       <v-spacer></v-spacer>
 
