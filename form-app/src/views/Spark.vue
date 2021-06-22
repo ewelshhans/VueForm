@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
       <v-card>
-          <v-card-title class="text-h5 font-weight-regular blue-grey white--text">
+          <v-card-title class="text-h5 font-weight-regular grey white--text">
       Sparkline component using Vuetify.
     </v-card-title>
     <v-card-text><i>
@@ -17,11 +17,7 @@
       :value="value"
       auto-draw
     ></v-sparkline>
-
-    <v-divider></v-divider>
-
-    <v-row>
-      <v-col
+    <v-col
         cols="12"
         md="6"
       >
@@ -33,7 +29,7 @@
             v-model="selectedGradient"
             mandatory
           >
-            <v-row>
+            <v-row id="colorSelector">
               <v-item
                 v-for="(gradient, i) in gradients"
                 :key="i"
@@ -59,6 +55,11 @@
         </v-row>
       </v-col>
 
+    <v-divider></v-divider>
+
+    <v-row>
+      
+
       <v-col
         cols="12"
         md="6"
@@ -73,7 +74,7 @@
         ></v-slider>
       </v-col>
 
-      <v-col cols="6">
+      <v-col cols="6" id="toggleFilled">
         <v-row
           class="fill-height"
           align="center"
@@ -139,3 +140,14 @@
     }),
   }
 </script>
+<style scoped>
+#colorSelector {
+    /* padding-left: 30px; */
+    margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+#toggleFilled {
+    padding-left: 25px;
+}
+</style>

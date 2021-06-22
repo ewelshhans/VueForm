@@ -1,10 +1,11 @@
 <template>
+<v-container fluid>
     <v-card>
-        <v-card-title class="text-h5 font-weight-regular blue-grey white--text">
-      List checkbox component using Vuetify.
+        <v-card-title class="text-h5 font-weight-regular grey white--text">
+      List component using Vuetify.
     </v-card-title>
     <v-card-text><i>
-        "..."</i>
+        "Lists present content in a way that makes it easy to identify a specific item in a collection. They provide a consistent styling for organizing groups of text and images..."</i>
     </v-card-text>
     <v-card-text>
         <div class="about pa-6">
@@ -110,7 +111,7 @@
   </div>
     </v-card-text>  
     </v-card>
-  
+</v-container>
 </template>
 <script>
   export default {

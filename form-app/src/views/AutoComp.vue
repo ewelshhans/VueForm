@@ -1,6 +1,7 @@
 <template>
-  <v-card>
-    <v-card-title class="text-h5 font-weight-regular blue-grey white--text">
+<v-container fluid>
+    <v-card>
+    <v-card-title class="text-h5 font-weight-regular grey white--text">
       Auto Complete component using Vuetify.
     </v-card-title>
     <v-card-text><i>
@@ -34,6 +35,8 @@
       </v-autocomplete>
     </v-card-text>
   </v-card>
+</v-container>
+  
 </template>
 <script>
   export default {

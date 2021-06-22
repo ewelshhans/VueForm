@@ -1,5 +1,14 @@
 <template>
-  <div class="home pa-6">
+<v-container fluid>
+  <v-card>
+  <v-card-title class="text-h5 font-weight-regular grey white--text">
+      Form component using Vuetify.
+    </v-card-title>
+    <v-card-text><i>
+        "When it comes to form validation, Vuetify has a multitude of integrations and baked in functionality..."</i>
+    </v-card-text>
+  <v-card-text>
+    <div class="home pa-6">
     <v-form
     ref="form"
     v-model="valid"
@@ -60,6 +69,11 @@
     </v-btn>
   </v-form>
   </div>
+  </v-card-text>
+
+</v-card>
+
+</v-container>
 </template>
 
 <script>
